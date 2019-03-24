@@ -5,8 +5,7 @@ read ANSWER
 
 if [ $ANSWER == y ] || [ $ANSWER == Y  ]
 then
-
-    echo 'Repository URL= '
+    echo 'Repository URL= ' 
     read REPOURL
 
     echo 'git remote add origin '$REPOURL
@@ -18,12 +17,16 @@ then
     git remote add origin $REPOURL
     git push -u origin master
 
+    echo '***********************Done**************************'
+
 else
-    echo 'Commit= '
+    echo 'Commit= ' 
     read COMMIT
     git pull
     git add .
     git commit -m $COMMIT
 
     git push origin master
+    echo '**********************Done****************************'
+    
 fi

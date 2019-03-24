@@ -15,3 +15,5 @@ zypper ref
 zypper in google-chrome-stable
 
 echo '*************************Done*************************'
+
+./QuickGitInit.sh
