@@ -21,11 +21,10 @@ then
 
 else
     echo 'Commit= ' 
-    read COMMIT
-    git pull
-    git add .
-    git commit -m $COMMIT
+    read commitVar
 
+    git add .
+    git commit -m "$commitVar"
     git push origin master
     echo '**********************Done****************************'
     
