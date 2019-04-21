@@ -16,4 +16,3 @@ zypper in google-chrome-stable
 
 echo '*************************Done*************************'
 
-./NeededInstall.sh
