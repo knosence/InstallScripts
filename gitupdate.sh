@@ -1,12 +1,17 @@
 #! /bin/bash
 
-GIT_REPOS = `ls -a`
 
-cd
+cd ~/GitRepos
+
+GIT_REPOS="$( bash <<EOF
+ls
+EOF
+)"
+
 for git_repo in ${GIT_REPOS}
 do
-    echo ~/GitRepos
-    echo updating ${GIT_REPOS} Repo
+    echo ============== updating ${git_repo} Repo ================
+    git pull orgin master
 done
 
-echo All Done
+echo =====================All Done===================
