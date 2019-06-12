@@ -10,8 +10,10 @@ EOF
 
 for git_repo in ${GIT_REPOS}
 do
-    echo ============== updating ${git_repo} Repo ================
-    git pull orgin master
+    cd ${git_repo}
+    echo ============== updating ++${git_repo}++ Repo ================
+    git pull
+    cd ..
 done
 
 echo =====================All Done===================
