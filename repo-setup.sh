@@ -19,5 +19,5 @@ do
 	echo ==\> Pulling down $repo
 	git clone http://github.com/"$repo"
 
-	echo ==\> Down with $repo
+	echo ==\> Done with $repo
 done
