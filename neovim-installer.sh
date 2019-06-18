@@ -1,5 +1,10 @@
 #! /bin/bash
 
-ln -s ~/GitRepos/NeovimConfigFile ~/.config/nvim
+cd
 
-
+if [ ! "$.config" =~ ^\. ]
+then
+	mkdir .config	
+fi
+cd .config
+cp ~/GitRepos/NeovimDotFile /nvim
