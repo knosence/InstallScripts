@@ -12,20 +12,20 @@ echo ''
 read input
 
 case "$input" in
-    1) source $HOME/GitRepos/Scripts/GitHubScripts/git_init.sh
+    1) source $HOME/GitRepos/Scripts/GitHubScripts/init_git.sh
         ;;
 
     2)  echo '==> Starting Pull of Git Repo'
         git pull
         ;;
 
-    3) source $HOME/GitRepos/Scripts/GitHubScripts/git_push.sh
+    3) source $HOME/GitRepos/Scripts/GitHubScripts/push_git.sh
         ;;
 
-    4) source $HOME/GitRepos/Scripts/GitHubScripts/repo_directory_update.sh
+    4) source $HOME/GitRepos/Scripts/GitHubScripts/update_repo_directory.sh
         ;;
 
-    5) source $HOME/GitRepos/Scripts/GitHubScripts/repo_directory_setup.sh
+    5) source $HOME/GitRepos/Scripts/GitHubScripts/setup_repo_directory.sh
         ;;
 
     *)
