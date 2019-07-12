@@ -11,7 +11,11 @@ git_repos=(
 	'knosence/LearningRust'
 	'rust-lang/rust'
 	'xi-editor/xi-editor'
-	'knosence/InstallScripts'
+	'knosence/scripts'
+  'SpaceVim/SpaceVim'
+  'knosence/rust-hyper-microservice'
+  'knosence/HtmlCssExercise'
+  'knosence/ResumeSite'
 )
 
 
@@ -24,15 +28,17 @@ if [ ! -d "$directory" ]; then
     echo "==> Making Directory"
     mkdir GitRepos
     
-    cd GitRepos
-
-    for repo in "${git_repos[@]}"
-    do
-        echo "==> Pulling down $repo"
-        git clone http://github.com/"$repo"
-
-        echo "==> Done with $repo"
-    done
 fi
 
+cd GitRepos
 
+for repo in "${git_repos[@]}"
+do
+    echo "==> Pulling down $repo"
+    git clone http://github.com/"$repo"
+
+    echo "==> Done with $repo"
+done
+
+cd
+rm -Rf scripts
