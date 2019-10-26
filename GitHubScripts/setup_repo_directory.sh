@@ -1,21 +1,23 @@
 #! /bin/bash
 
 git_repos=(
-	'neovim/neovim'
-	'knosence/NeovimDotFile'
-	'onivim/oni2'
-	'redox-os/redox.git'
-	'servo/servo'
-	'jwilm/alacritty'
-	'bradtraversy/rust_sandbox'
-	'knosence/LearningRust'
-	'rust-lang/rust'
-	'xi-editor/xi-editor'
-	'knosence/scripts'
-  'SpaceVim/SpaceVim'
-  'knosence/rust-hyper-microservice'
-  'knosence/HtmlCssExercise'
-  'knosence/ResumeSite'
+'neovim/neovim'
+'knosence/NeovimDotFile'
+'onivim/oni2'
+'redox-os/redox.git'
+'servo/servo'
+'jwilm/alacritty'
+'bradtraversy/rust_sandbox'
+'knosence/LearningRust'
+'rust-lang/rust'
+'xi-editor/xi-editor'
+'knosence/scripts'
+'SpaceVim/SpaceVim'
+'knosence/HtmlCssExercise'
+'knosence/ResumeSite'
+'knosence/Frontend-Dev'
+'knosence/rust-cheatsheet'
+
 )
 
 
