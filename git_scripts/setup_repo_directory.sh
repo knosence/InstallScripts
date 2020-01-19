@@ -1,7 +1,6 @@
 #! /bin/bash
 
 git_repos=(
-'knosence/LearningRust'
 'knosence/scripts'
 'knosence/HtmlCssExercise'
 'knosence/resume-cv'
