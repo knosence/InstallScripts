@@ -12,6 +12,7 @@ echo -e 'Doom Emacs Install...............3'
 echo -e 'Rust Install.....................4'
 echo -e 'Nvidia Install...................5'
 echo -e 'Spacevim Install.................6'
+echo -e 'Intellij Idea Install............7'
 echo -e ''
 echo -e 'Exit.............................0'
 echo ''
@@ -28,19 +29,23 @@ case "$input" in
         ;;
 
     3)  clear
-        source $HOME/GitRepos/scripts/update_scripts/doom_emacs.sh
+        source $HOME/GitRepos/scripts/installer_scripts/doom_emacs.sh
         ;;
         
     4)  clear
-        source $HOME/GitRepos/scripts/update_scripts/rust_install.sh
+        source $HOME/GitRepos/scripts/installer_scripts/rust_install.sh
         ;;
 
     5)  clear
-        source $HOME/GitRepos/scripts/update_scripts/nvidia_drivers.sh
+        source $HOME/GitRepos/scripts/installer_scripts/nvidia_drivers.sh
         ;;
 
     6)  clear
-        source $HOME/GitRepos/scripts/update_scripts/spacevim.sh
+        source $HOME/GitRepos/scripts/installer_scripts/spacevim.sh
+        ;;
+
+    7)  clear
+        sudo source $HOME/GitRepos/scripts/installer_scripts/intellij_install.sh
         ;;
 
 
