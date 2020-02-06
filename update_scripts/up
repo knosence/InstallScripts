@@ -6,14 +6,17 @@ cd
 echo 'Starting With Systems Update'
 sudo dnf update
 
+echo -e 'Now Updating Doom'
+~/.emacs.d/bin/doom update
+~/.emacs.d/bin/doom upgrade
+
 echo '==> updating Rust and Cargo'
 rustup update
-cargo update
 
 echo '==> Updating Node'
-npm install -g npm
+sudo npm install -g npm
 
 echo '==> Updating GitRepo Directory'
-~/GitRepos/scripts/git_scripts/repo_directory_update.sh
+~/GitRepos/scripts/git_scripts/update_repo_directory.sh
 
 echo '==> Updating Complete'

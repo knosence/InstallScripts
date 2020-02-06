@@ -33,7 +33,7 @@ case "$input" in
         ;;
         
     4)  clear
-        source $HOME/GitRepos/scripts/installer_scripts/rust_install.sh
+        source $HOME/GitRepos/scripts/installer_scripts/rust_installer.sh
         ;;
 
     5)  clear
@@ -54,3 +54,4 @@ case "$input" in
         echo 'You Selected the Wrong Selection'
         source $HOME/GitRepos/scripts/main
 esac
+
