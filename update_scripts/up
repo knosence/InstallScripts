@@ -8,7 +8,7 @@ sudo dnf update
 
 echo -e 'Now Updating Doom'
 ~/.emacs.d/bin/doom update
-~/.emacs.d/bin/doom upgrade
+~/.emacs.d/bin/doom upgrade -f
 
 echo '==> updating Rust and Cargo'
 rustup update
