@@ -2,6 +2,8 @@
 
 git_repos=(
 'knosence/scripts'
+'knosence/apa_latex_template'
+'knosence/org-notes'
 'knosence/HtmlCssExercise'
 'knosence/resume-cv'
 'knosence/masonic-ritual'
