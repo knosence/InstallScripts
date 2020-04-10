@@ -3,8 +3,7 @@
 echo 'Installing Doom-Emacs'
 
 echo 'Starting with Emacs'
-
-sudo dnf install emacs -y
+sudo pacman -S emacs
 
 echo 'Now the Magic behind Emacs... Doom'
 

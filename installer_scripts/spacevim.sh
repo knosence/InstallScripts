@@ -1,7 +1,7 @@
 #! bin/bash
 
 printf 'Installing SpaceVim\n'
-pkg install neovim -y
+sudo pacman -S neovim 
 
 curl -sLf http://spacevim.org/install.sh | bash
 
