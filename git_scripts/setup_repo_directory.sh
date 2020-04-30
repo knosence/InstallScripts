@@ -10,9 +10,14 @@ git_repos=(
 'knosence/ResumeSite'
 'knosence/Frontend-Dev'
 'knosence/rust-cheatsheet'
-
+'ashwanikumar04/practical-design-patterns'
+'redox-os/redox'
+'jwilm/alacritty'
+'shmishtopher/DailyCode'
+'brndnmtthws/cracking-the-coding-interview-rust'
+'imcodingideas/map-filter-reduce-exersises'
+' onivim/oni2'
 )
-
 
 
 directory="GitRepos"
