@@ -42,3 +42,9 @@ done
 
 cd
 rm -Rf scripts
+
+bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/nvim/master/utils/install.sh)
+echo set preview_image_method ueberzug >> ~/.config/ranger/rc.config
+
+
+

@@ -19,4 +19,8 @@ sudo npm install -g npm
 echo '==> Updating GitRepo Directory'
 source $HOME/GitRepos/scripts/git_scripts/update_repo_directory.sh
 
+echo '==> Updating nvim'
+cd ~/.config/nvim
+git pull
+
 echo '==> Updating Complete'
