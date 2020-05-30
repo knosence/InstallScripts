@@ -19,18 +19,18 @@ case "$input" in
     0) exit
        ;;
     1)  clear
-        source $HOME/GitRepos/scripts/git_scripts/gitup
+        source $HOME/GitRepos/scripts/git_scripts/gitup.sh
         ;;
 
     2)  clear
-        source $HOME/GitRepos/scripts/installer_scripts/install
+        source $HOME/GitRepos/scripts/installer_scripts/install.sh
         ;;
 
     3)  clear
-        source $HOME/GitRepos/scripts/update_scripts/up
+        source $HOME/GitRepos/scripts/update_scripts/up.sh
         ;;
 
     *) 
         echo 'You Selected the Wrong Selection'
-        source $HOME/GitRepos/scripts/main
+        source $HOME/GitRepos/scripts/main.sh
 esac

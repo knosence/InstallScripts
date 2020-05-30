@@ -4,7 +4,7 @@ echo '==> Initializing System wide Update'
 cd
 
 echo 'Starting With Systems Update'
-sudo dnf update
+yay
 
 echo -e 'Now Updating Doom'
 ~/.emacs.d/bin/doom update
@@ -17,6 +17,6 @@ echo '==> Updating Node'
 sudo npm install -g npm
 
 echo '==> Updating GitRepo Directory'
-~/GitRepos/scripts/git_scripts/update_repo_directory.sh
+source $HOME/GitRepos/scripts/git_scripts/update_repo_directory.sh
 
 echo '==> Updating Complete'

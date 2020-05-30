@@ -20,7 +20,7 @@ read input
 case "$input" in
 
     0)  clear
-        source $HOME/GitRepos/scripts/main
+        source $HOME/GitRepos/scripts/main.sh
        ;;
 
     1)  clear
@@ -46,5 +46,5 @@ case "$input" in
 
     *)  clear
         echo 'You Selected the Wrong Selection'
-        source $HOME/GitRepos/scripts/Git_scripts/gitup
+        source $HOME/GitRepos/scripts/Git_scripts/gitup.sh
 esac
