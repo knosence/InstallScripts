@@ -16,7 +16,7 @@ git_repos=(
 'shmishtopher/DailyCode'
 'brndnmtthws/cracking-the-coding-interview-rust'
 'imcodingideas/map-filter-reduce-exersises'
-' onivim/oni2'
+'onivim/oni2'
 )
 
 
@@ -35,7 +35,7 @@ cd GitRepos
 for repo in "${git_repos[@]}"
 do
     echo "==> Pulling down $repo"
-    git clone http://github.com/"$repo"
+    git clone git@github.com:"$repo"
 
     echo "==> Done with $repo"
 done
