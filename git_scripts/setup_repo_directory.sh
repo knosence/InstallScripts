@@ -8,14 +8,13 @@ git_repos=(
 'knosence/resume-cv'
 'knosence/masonic-ritual'
 'knosence/ResumeSite'
-'knosence/Frontend-Dev'
 'knosence/rust-cheatsheet'
 'ashwanikumar04/practical-design-patterns'
 'redox-os/redox'
 'jwilm/alacritty'
 'shmishtopher/DailyCode'
 'brndnmtthws/cracking-the-coding-interview-rust'
-'imcodingideas/map-filter-reduce-exersises'
+'imcodingideas/map-filter-reduce-exercises'
 'onivim/oni2'
 )
 
