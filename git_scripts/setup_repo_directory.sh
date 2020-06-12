@@ -1,12 +1,12 @@
 #! /bin/bash
 
 git_repos=(
+'knosence/masonic-ritual'
+'knosence/org-notes'
 'knosence/scripts'
 'knosence/apa_latex_template'
-'knosence/org-notes'
 'knosence/HtmlCssExercise'
 'knosence/resume-cv'
-'knosence/masonic-ritual'
 'knosence/ResumeSite'
 'knosence/rust-cheatsheet'
 'ashwanikumar04/practical-design-patterns'
