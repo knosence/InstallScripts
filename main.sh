@@ -16,7 +16,7 @@ echo ''
 read input
 
 case "$input" in
-    0) exit
+    exit) exit
        ;;
     1)  clear
         source $HOME/GitRepos/scripts/git_scripts/gitup.sh
