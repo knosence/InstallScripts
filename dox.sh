@@ -15,7 +15,9 @@ subsection=$2
 source update.sh
 source install.sh
 source git.sh
-if [$1 -eq 'update']
+
+if [$1 == "update"];
+then
   #Updates (dox update)
   case $2 in
   #dox update full
@@ -36,7 +38,8 @@ if [$1 -eq 'update']
   *)
     echo -e 'Not an Upgrade Selection';;
   esac
-elif [$2 -eq 'install']
+elif [$1 == "install"];
+then
   #Install scripts
   #dox install / GitRepos
   case $2 in
@@ -48,17 +51,40 @@ elif [$2 -eq 'install']
       echo -e 'Installing packages for Fresh Install';;
   #dox install / server
     server)
-      echo -e 'Installing packages for server'
+      echo -e 'Installing packages for server';;
   #dox install / dev-env 
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
 
-  #Git setup and usage
+  esac
+elif [$1 == "git"];
+then 
+ #Git setup and usage
   #dox git / pull
+  case $2 in
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / push
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / status
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / repo / status
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / repo / setup
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / repo / pull
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
   #dox git / repo / status
-
+    dev) 
+      echo -e 'Installing Developer Enviroment';;
+  esac
+else 
+  echo -e "Not a valid selection.\n [update], [install], or [git]"
+fi
 
 
