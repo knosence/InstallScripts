@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
   #dox git / pull
-  function pull(){
-    git pull
+  function pulling(){
+    echo -e "pulling down $0"
   }
   #dox git / push
-  read COMMIT
 
-  function push(){
-   git add . 
-   git commit -m "$COMMIT"
-  
-   git push origin master
+  function pushing(){
+    read COMMIT
+    git add . 
+    git commit -m "$COMMIT"
+    git push origin master
   }
   #dox git / status
   function status(){
