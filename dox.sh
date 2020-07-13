@@ -32,19 +32,14 @@ then
   #dox update emacs
   emacs)
     echo -e 'Updating Emacs-Doom';;
-  #dox update neovim
+  #dox update neovim:w
   Neovim)
     echo -r 'Updating Neovim';;
   *)
     echo -e 'Not an Upgrade Selection';;
   esac
-<<<<<<< HEAD
 elif [$1 == "install"];
 then
-=======
-  
-elif [$1 -eq 'install']
->>>>>>> 0c0f2f5f2eb2c613553e1d7e988c72e7d0ffb4c1
   #Install scripts
   case $2 in
   #dox install / GitRepos
@@ -58,7 +53,6 @@ elif [$1 -eq 'install']
       echo -e 'Installing packages for Fresh Install';;
   #dox install / server
     server)
-<<<<<<< HEAD
       echo -e 'Installing packages for server';;
   #dox install / dev-env 
     dev) 
@@ -93,9 +87,7 @@ then
   esac
 else 
   echo -e "Not a valid selection.\n [update], [install], or [git]"
-=======
       echo -e 'Installing packages for Server';;
-  #dox install / dev-env 
     dev)
       echo -e 'Installing packages for Development Enviroment'
       echo -e 'installing Neovim configs'
@@ -105,7 +97,7 @@ else
 
 esac
   #Git setup and usage
-elif [$1 -eq 'git']
+elif [$1 == 'git']
   case $2 in
   
   #dox git / pull
@@ -132,7 +124,6 @@ elif [$1 -eq 'git']
 else
   echo -e 'Select either "update", "install", or "git" in all lowercase!'
   
->>>>>>> 0c0f2f5f2eb2c613553e1d7e988c72e7d0ffb4c1
 fi
 
 
