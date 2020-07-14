@@ -22,7 +22,7 @@ case $1 in
     case $2 in
     #dox update full
     full) 
-      echo -e 'updating Entire System';;
+      full;;
     #dox update repos
     repos)
       echo -e 'Updating Repos';;
@@ -70,19 +70,16 @@ case $1 in
         pushing;;
     #dox git / status
       status)
-        echo -e 'Checking the Status of $0';;
-    #dox git / repo / status
-      repo-status)
-        echo -e 'Checking Status of All Repos';;
+        status;;
     #dox git / repo / setup
       repo-setup)
-        echo -e 'Setting up GitRepos File';;
+        repo-setup;;
     #dox git / repo / pull
       repo-pull)
-        echo -e 'Pulling Down All Repos Updates';;
+        repo-pull;;
     #dox git / repo / status
       repo-status)
-        echo -e 'Check all Repo status';;
+        repo-status;;
     esac;;
 
   *)  

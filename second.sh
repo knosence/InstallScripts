@@ -1,5 +1,7 @@
 #/usr/bin/env bash
 
-source ./installer_scripts/update.sh
+echo -e "${PWD##*/}"
 
-update
+printf '%s\n' "${PWD##*/}"
+
+basename "$PWD"
