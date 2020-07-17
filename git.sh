@@ -2,8 +2,8 @@
 
   #dox git / pull
   function pulling(){
-    echo -e "Pulling Down repo ${PWD##*/}"
-    git pull
+    echo -e "Pulling Down repo "+${PWD##*/}
+    git pull origin master
   }
   #dox git / push
 
@@ -13,11 +13,11 @@
     git add . 
     git commit -m "$COMMIT"
     git push origin master
-    echo -e "Pushing up ${PWD##*/} to Github\n"
+    echo -e "Pushing up "${PWD##*/} " to Github\n"
   }
   #dox git / status
   function status(){
-    echo -e 'The status of ${PWD##*/} is:'
+    echo -e "The status of ${PWD##*/} is:"
     git status
   }
   #dox git / repo / setup

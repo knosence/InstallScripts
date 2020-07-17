@@ -12,9 +12,9 @@ subsection=$2
 
 #source $HOME/GitRepos/scripts/second.sh
 
-source update.sh
-source install.sh
-source git.sh
+source $HOME/GitRepos/scripts/update.sh
+source $HOME/GitRepos/scripts/install.sh
+source $HOME/GitRepos/scripts/git.sh
 
 case $1 in 
   update)
