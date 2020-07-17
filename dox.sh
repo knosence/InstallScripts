@@ -64,7 +64,7 @@ case $1 in
     
     #dox git / pull
       pull)
-        git;;
+        pulling;;
     #dox git / push
       push)
         pushing;;
