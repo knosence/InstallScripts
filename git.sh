@@ -28,20 +28,25 @@
   function repo-pull(){
     cd ~/GitRepos
 
-    repos="$( bash <EOF 
-    ls 
-    EOF
+    GIT_REPOS="$( 
+    bash <<-EOF
+      ls 
+EOF
     )"
-  
-    for repo in ${repos} 
+
+    for git_repo in ${GIT_REPOS}
     do
-      echo ${repo}
-      echo -e " >>> Now Upgrading the ${repo} Repo"
-      git pull
-      echo -e " >>> Finished"
-      cd ..
+        cd ${git_repo}
+        echo ==\> updating ++ ${git_repo} ++ Repo
+        git pull
+        cd ..
     done
 
+    echo '==> updating Neovim config files'
+    cd ~/.config/nvim
+    git pull
+
+    echo '==> Done'
   }
   #dox git / repo / status
   function repo-status(){
